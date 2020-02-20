@@ -2,20 +2,13 @@
 
 Before do
   Capybara.register_driver :chrome do |app|
-    caps = if ENV['HEADLESS'].eql?('false')
-             Selenium::WebDriver::Remote::Capabilities.chrome
-           else
-             Selenium::WebDriver::Remote::Capabilities.chrome(
-               chromeOptions: {
-                 args: %w(headless disable-gpu no-sandbox)
-               }
-             )
-           end
+    options = Selenium::WebDriver::Chrome::Options.new
+    options.add_argument("window-size=2500,2500")
+    options.add_argument("-disable-search-geolocation-disclosure")
 
-    Capybara::Selenium::Driver.new(
-      app,
+    Capybara::Selenium::Driver.new(app,
       browser: :chrome,
-      desired_capabilities: caps
+      options: options
     )
   end
 
