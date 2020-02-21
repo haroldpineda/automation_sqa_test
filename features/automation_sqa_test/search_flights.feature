@@ -11,7 +11,6 @@ And User select second flight
 Examples:
     | city         | airport                           | date | passagers |
     | Medellín     | Aeropuerto José María Córdova     |  23  |    2      |
-    | Bucaramanga  | Aeropuerto Palonegro              |  24  |    3      |
     | Ibagué       | Aeropuerto de Perales             |  25  |    4      |
     | Cali         | Aeropuerto Alfonso Bonilla Aragón |  26  |    1      |
     | Barranquilla | Aeropuerto Ernesto Cortissoz      |  27  |    2      |
