@@ -1,5 +1,5 @@
-When('Select place of destination {string}') do |place|
-  @home_page.search_destination(place)
+When('Select place of destination {string} and airport {string}') do |place, airport|
+  @home_page.search_destination(place, airport)
 end
 
 When('User select travel date {string}') do |date|

@@ -7,3 +7,5 @@ require 'yaml'
 # Page Object Classes
 require_relative '../pages/home/index'
 require_relative '../pages/result/flights_result'
+
+@file = File.open("log.txt", "w")
