@@ -6,6 +6,7 @@ When Select place of destination '<city>' and airport '<airport>'
 Then User select travel date '<date>'
 And User select travel passagers number '<passagers>'
 Then User search flights
+And User select second flight
 
 Examples:
     | city         | airport                           | date | passagers |

@@ -50,10 +50,6 @@ module Pages
       def search_button_flights
         button_search = page.all('div', text: 'Buscar vuelo')
         button_search.last.click
-
-        #esto es en caso de error
-        #find(id: 'alert-title-global-warning-message', wait: 30)
-        #@file.write page.text
       end
     end
   end
